@@ -137,7 +137,7 @@ class Prescreen1c extends React.Component<Prescreen1cProps> {
           will not show up on a Social Security record.
         </Glossary>
             </CardGlossaryContainer>
-            {isEmploymentCovered && (
+            {/* {isEmploymentCovered && (
             <CardGlossaryContainer>
               <Card>
                 <QuestionText>
@@ -197,7 +197,7 @@ Social Security record?
                 </Card>
               )}
               </>
-            )}
+            )} */}
         </ContentContainer>
       </React.Fragment>
     );

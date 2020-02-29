@@ -28,6 +28,10 @@ const ChildWrapper = styled.div`
   padding:  10px 10px 15px 10px;
   flex: 1 1 auto;
   min-width: 0;
+  @media (max-width: 600px) {
+    overflow: scroll;
+    width: 530px;
+  }
 `;
 
 const Main = styled("main")`

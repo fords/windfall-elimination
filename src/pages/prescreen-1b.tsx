@@ -30,13 +30,19 @@ const GlosaryStyle = styled.div`
   }
 `;
 
+
 const HowToContainer = styled.div`
   display: block;
 `;
 
 
 const ContentContainer = styled.div`
-  max-width: 70%;
+  max-width: 100%;
+`;
+
+const TopQuestionAndTitle = styled.div`
+width: 70%;
+margin-bottom: 75px;
 `;
 
 const Link = styled.a`
@@ -97,7 +103,7 @@ class Prescreen1b extends React.Component<Prescreen1bProps> {
                 To calculate your Social Security retirement benefits, you will need a record of your earnings from Social Security.
                 Follow the steps below to get your earning record.
             </TextBlock> 
-            {this.checkForBirthday()}
+            {/* {this.checkForBirthday()}
                 
                 <Card>
                     <QuestionText>Do you have a copy of your earnings record?</QuestionText>
@@ -223,7 +229,7 @@ the red box in the photo below.</ol>
                 </Card>
               </HowToContainer>
             </> : null
-          }
+          } */}
           </ContentContainer>
           <GlosaryStyle>
           <Glossary 
