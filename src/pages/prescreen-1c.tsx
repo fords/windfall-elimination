@@ -41,10 +41,10 @@ margin: auto 0;
 `;
 
 const TopQuestionAndTitle = styled.div`
-width: 70%;
-margin-bottom: 75px;
-`;
 
+`;
+// width: 70%;
+// margin-bottom: 75px;
 interface Prescreen1cProps {
   userState: UserState
   userStateActions: UserStateActions

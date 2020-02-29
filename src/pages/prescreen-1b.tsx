@@ -31,13 +31,19 @@ const GlosaryStyle = styled.div`
 `;
 
 
+const CardGlossaryContainer = styled.div`
+display: flex;
+justify-content: space-between;
+margin: auto 0;
+`;
+
 const HowToContainer = styled.div`
   display: block;
 `;
 
 
 const ContentContainer = styled.div`
-  max-width: 100%;
+  width: 100%;
 `;
 
 const TopQuestionAndTitle = styled.div`
@@ -94,6 +100,8 @@ class Prescreen1b extends React.Component<Prescreen1bProps> {
     <React.Fragment>
         <SEO title="Prescreen 1b" keywords={[`social security`, `government`, `retirement`]} />
         <ContentContainer>
+        <CardGlossaryContainer>
+        <TopQuestionAndTitle>
             <H2>Step 2: Earnings</H2>
             <TextBlock>
                 Your Social Security retirement benefits are calculated based on your earnings in covered employment.
@@ -103,6 +111,7 @@ class Prescreen1b extends React.Component<Prescreen1bProps> {
                 To calculate your Social Security retirement benefits, you will need a record of your earnings from Social Security.
                 Follow the steps below to get your earning record.
             </TextBlock> 
+   
             {/* {this.checkForBirthday()}
                 
                 <Card>
@@ -230,8 +239,10 @@ the red box in the photo below.</ol>
               </HowToContainer>
             </> : null
           } */}
+          </TopQuestionAndTitle>
+          </CardGlossaryContainer>
           </ContentContainer>
-          <GlosaryStyle>
+          
           <Glossary 
           title="MYSOCIALSECURITY"
           link="https://www.ssa.gov/myaccount/"
@@ -239,7 +250,8 @@ the red box in the photo below.</ol>
           >
           MySocialSecurity is the Social Security Administrations online service. With a MySocialSecurity account , you can download a copy of your earnings record to use for this question.
           </Glossary>
-          {
+        
+          {/* {
             this.showFileUpload() == true && <Glossary
           title="IMPORTED RECORDS"
           >
@@ -255,9 +267,9 @@ the red box in the photo below.</ol>
            and correct any errors that you find. The first row
              may be a different year than on the paper
              document.
-          </Glossary>
+          </Glossary> */}
           }
-          </GlosaryStyle>
+          
        </React.Fragment>
     )
   }
